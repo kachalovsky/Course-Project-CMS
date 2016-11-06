@@ -1,0 +1,356 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Описание установки</title>
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script> src='js/jquery.js'</script>
+<script src="https://webasr.yandex.net/jsapi/v1/webspeechkit.js" type="text/javascript"></script>
+<script src="https://webasr.yandex.net/jsapi/v1/webspeechkit-settings.js" 
+type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top"  id="navigation">
+	<div class="row margin"></div>
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#responsive-menu">
+				<span class="sr-only">Открыть навигацию</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" style="margin-left:20px">
+					<img src="img/logo.png" alt="" height="51px"/>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="responsive-menu">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="teory.html">Теория</a></li>
+					<li><a href="experience.html">Описание установки</a></li>
+					<li><a href="#">Пункт 4</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row margin"></div>
+	</div>
+
+<div class="container" style="min-height: 80%;">
+
+<div class="modal fade" id="modal-1">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" type="button" data-dismiss="modal">
+					&times;
+				</button>
+				<h4 class="modal-title">Вид слева</h4>
+			</div>
+			<div class="modal-body" id="for_sizes" style="text-align: center">
+				<canvas class='canvas' id='canvas-1' width="800px">Обновите браузер</canvas>
+				<script>				
+			 tts = new ya.speechkit.Tts(
+     
+    		  {
+    		    apikey: '94eaff00-48eb-4726-8518-4051379d19b3',
+    		    emotion: 'good',
+      		 	speed: 1,
+    		    speaker: 'zahar'  
+   			   }
+  		  );
+
+
+					const parts = [
+
+						{Ax:323,
+						Ay:573,
+						Bx:377,
+						By:590,
+						talk: 'Пло`ско вы`пуклая линза',
+						draw: ()=>{
+							ctx.beginPath();	
+							ctx.moveTo327;
+							ctx.lineTo(360,572);
+							ctx.lineTo(363,570);
+							ctx.lineTo(368,568);
+							ctx.lineTo(365,565);
+							ctx.lineTo(360, 563);
+							ctx.lineTo(355, 560);
+							ctx.lineTo(345, 562);
+							ctx.lineTo(330, 567);
+							ctx.lineTo(323, 570);						
+							ctx.lineTo(327, 575);
+							ctx.lineTo(360,572);
+
+							ctx.stroke();
+        				}},
+						{Ax:270,
+						Ay:41,
+						Bx:355,
+						By:190,
+						talk: 'окуляр ',
+						draw: ()=>{
+							ctx.beginPath();	
+							ctx.moveTo(265, 38);
+							ctx.lineTo(267, 65);
+							ctx.lineTo(260, 67);
+							ctx.lineTo(272, 193);
+							ctx.lineTo(345, 186);
+							ctx.lineTo(335, 60);
+							ctx.lineTo(325, 60);
+							ctx.lineTo(323, 33);
+							ctx.lineTo(265, 38);
+							ctx.stroke();
+        				}},
+        				{Ax:305,
+						Ay:532,
+						Bx:390,
+						By:562,
+						talk: 'объектив  ',
+						draw: ()=>{
+							ctx.beginPath();	
+							ctx.moveTo(300, 525);
+							ctx.lineTo(350, 525);
+							ctx.lineTo(370, 518);
+							ctx.lineTo(380, 510);
+							ctx.lineTo(380, 529);
+							ctx.lineTo(369, 539);
+							ctx.lineTo(369, 555);
+							ctx.lineTo(355, 558);
+							ctx.lineTo(355, 539);
+							ctx.lineTo(340, 542);
+							ctx.lineTo(300, 540);
+							ctx.lineTo(300, 523);
+							ctx.stroke();
+        				}},
+        				{Ax:260,
+						Ay:572,
+						Bx:458,
+						By:653,
+						talk: ' подвижный столик микроскопа ',
+						draw: ()=>{
+							ctx.beginPath();	
+							ctx.moveTo(230, 650);
+							ctx.lineTo(225, 605);
+							ctx.lineTo(255, 555);
+							ctx.lineTo(350, 548);
+							ctx.moveTo(370, 548);
+							ctx.lineTo(443, 542);
+							ctx.lineTo(443, 590);
+							ctx.lineTo(225, 605);
+							ctx.moveTo(443, 590);
+							ctx.lineTo(448, 635);
+							ctx.lineTo(230, 650);
+							ctx.stroke();
+        				}},
+        				{Ax:459,
+						Ay:577,
+						Bx:500,
+						By:627,
+						talk: 'ручка для перемещения линзы вперед или назад',
+						draw: ()=>{
+							ctx.beginPath();	
+							ctx.moveTo(446, 560);
+							ctx.lineTo(465, 560);
+							ctx.lineTo(465, 550);
+							ctx.lineTo(484, 550);
+							ctx.lineTo(484, 615);
+							ctx.lineTo(465, 615);
+							ctx.lineTo(465, 605);
+							ctx.lineTo(447, 605);
+							ctx.lineTo(446, 560);						
+							ctx.stroke();
+        				}},
+        				{Ax:111,
+						Ay:333,
+						Bx:203,
+						By:401,
+						talk: ' барабан осветителя со сменными источниками света',
+						draw: ()=>{
+							ctx.beginPath();	
+							ctx.moveTo(115, 323);
+							ctx.lineTo(107, 335);
+							ctx.lineTo(105, 350);
+							ctx.lineTo(105, 396);
+							ctx.lineTo(196, 390);
+							ctx.lineTo(194, 335);
+							ctx.lineTo(194, 320);
+							ctx.lineTo(115, 323);						
+							ctx.stroke();
+        				}}
+        			];
+  				    var example = document.getElementById("canvas-1"),
+     			    ctx   = example.getContext('2d'), // Контекст
+   			        pic   = new Image();              // "Создаём" изображение
+       				pic.src    = 'content_img/1_r.jpg';  // Источник изображения, позаимствовано на хабре
+       				canvas = document.getElementById('canvas-1');
+       					resultSize = {
+       						width: canvas.width,
+       						height: (canvas.width/pic.width) *  pic.height
+       					};
+       					canvas.height = resultSize.height; 	
+       				pic.onload = function() {    // Событие onLoad, ждём момента пока загрузится изображение
+       					canvas = document.getElementById('canvas-1');
+       					resultSize = {
+       						width: canvas.width,
+       						height: (canvas.width/pic.width) *  pic.height
+       					};
+       					canvas.height = resultSize.height; 					
+        			ctx.drawImage(pic, 0, 0, resultSize.width,resultSize.height);  // Рисуем изображение от точки с координатами 0, 0
+        			ctx.strokeStyle = 'aqua';
+        			ctx.lineWidth = 4
+					}
+
+					var canvas = $('#canvas-1');
+
+					
+
+					canvas.on('mousemove', function(e) {
+						var canvas = $('#canvas-1');
+					ctx.drawImage(pic, 0, 0, resultSize.width,resultSize.height);
+					var canvasPosition = {
+  					  x: canvas.offset().left,
+    				  y: canvas.offset().top
+					};
+
+   					 var mouse = {
+     				   x: e.pageX - canvasPosition.x,
+     				   y: e.pageY - canvasPosition.y
+    				}
+    				for(var item of parts){
+    					if(mouse.x>item.Ax && mouse.x<item.Bx && mouse.y>item.Ay && mouse.y<item.By) {
+    					    						
+    						item.draw();
+    						break;
+    					}
+    				}
+    					console.log(JSON.stringify(mouse));
+    						console.log(JSON.stringify(item));
+    				
+				});
+
+						canvas.on('click', function(e) {
+						var canvas = $('#canvas-1');
+					
+					var canvasPosition = {
+  					  x: canvas.offset().left,
+    				  y: canvas.offset().top
+					};
+
+   					 var mouse = {
+     				   x: e.pageX - canvasPosition.x,
+     				   y: e.pageY - canvasPosition.y
+    				}
+    				for(var item of parts){
+    					if(mouse.x>item.Ax && mouse.x<item.Bx && mouse.y>item.Ay && mouse.y<item.By) {
+    					    						
+    								tts.speak(item.talk)
+    						break;
+    					}
+    				}
+    					console.log(JSON.stringify(mouse));
+    						console.log(JSON.stringify(item));
+    				
+				});
+
+
+        			
+
+        			
+   				</script>
+				
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class="row" id="content">
+		<div class="col-lg-10 col-lg-offset-1">
+			<div id="carousel" class="carousel slide">
+				<!--Индикаторы слайдов-->
+				<ol class="carousel-indicators">
+					<li class="active" data-target="#carousel" data-slide-to="0"></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+					<li data-target="#carousel" data-slide-to="2"></li>
+					<li data-target="#carousel" data-slide-to="3"></li>
+					<li data-target="#carousel" data-slide-to="4"></li>
+				</ol>
+
+				<!--Слайды-->
+				<div class="carousel-inner">
+					<div class="item active" >
+						<img src="content_img/1.jpg" data-toggle="modal" data-target="#modal-1" alt="">
+						<div class="carousel-caption">
+							<h3>Вид слева</h3>
+						</div>
+					</div>
+					<div class="item">
+							<img src="content_img/2.jpg" alt="">
+						<div class="carousel-caption">
+							<h3>Вид справа</h3>
+						</div>
+					</div>
+					<div class="item">
+							<img src="content_img/3.jpg" alt="">
+						<div class="carousel-caption">
+							<h3>Вид сзади</h3>
+						</div>
+					</div>
+					<div class="item">
+							<img src="content_img/4.jpg" alt="">
+						<div class="carousel-caption">
+							<h3>Вид сверху</h3>
+					</div>
+					</div>
+					<div class="item">
+						<img src="content_img/5.jpg" alt="">
+						<div class="carousel-caption">
+							<h3>Вид спереди</h3>
+						</div>
+					</div>
+				</div>
+
+				<!--Стрелки переключения-->
+				<a href="#carousel" class="left carousel-control" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a href="#carousel" class="right carousel-control" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+	
+			 <h3 class="topic">Описание установки</h3>
+		<div class="col-lg-10 col-lg-offset-1">
+			 <p  class="text-justify">Лабораторная установка (рис. 1) состоит из следующих основных частей: микроскопа, плосковыпуклой линзы и барабана осветителя <i><b>5</b></i> со сменными источниками света. Микроскоп состоит из окуляра <i><b>1</b></i> и объектива <i><b>2</b></i>. На подвижном столике <i><b>3</b></i> микроскопа находится плосковыпуклая линза, установленная выпуклой поверхностью на плоской пластине <i><b>10</b></i>. Для горизонтального перемещения линзы вперед-назад используется ручка <i><b>4</b></i>, а вправо-влево − ручка <i><b>8</b></i>. При вертикальном перемещении столика <i><b>3</b></i> используется ручка <i><b>9</b></i> и указатель <i><b>7</b></i> допустимых пределов перемещения столика <i><b>3</b></i>. Тумблер <i><b>6</b></i> подключает установку к электрической сети сети. </p>
+			<div class="formule"><img src="content_img/f13.png" alt="" ></div>
+			<div class="formule_desc"><i>Рисунок 1. Схема лабораторной установки</i></div>
+
+			  <p  class="text-justify">Оптическая схема установки представлена на рис. 2. Точка О соприкосновения выпуклой поверхности линзы со стеклянной пластинкой <i><b>7</b></i> столика должна лежать на оптической оси микроскопа. Освещение производится монохроматическим светом с длиной волны λ, испускаемым цветными светодиодами (четыре светодиода, испускающие свет разной длины волны), и белым светом (светодиод, испускающий свет, который по спектральному составу близок к белому свету). Свет от источника <i><b>1</b></i> (светодиодов) направляется через коллиматор∗ <i><b>2</b></i> на полупрозрачную стеклянную пластинку <i><b>3</b></i>, наклоненную под углом 45° к оптической оси микроскопа. Падающий луч частично проходит через пластинку, а частично отражается. Отраженный луч проходит сквозь объектив <i><b>5</b></i> микроскопа и падает на плосковыпуклую линзу <i><b>6</b></i>, лежащую на стеклянной пластинке <i><b>7</b></i>. В результате интерференции лучей, отраженных от верхней и нижней поверхностей воздушного зазора между линзой и пластинкой, возникает интерференционная картина (кольца Ньютона <i><b>8</b></i>), которую наблюдают, глядя в окуляр <i><b>4</b></i> микроскопа.</p> 
+			  <div class="formule"><img src="content_img/f14.png" alt="" ></div>
+			<div class="formule_desc"><i>Рисунок 2. Оптическая схема установки</i></div>
+		</div>
+	</div>
+</div>
+
+<div class="container for_btn" style="text-align: center">
+<div class="row">
+		<div class="col-lg-2 col-lg-offset-5"><button type="button" class="btn btn-success">Далее</button></div>
+	</div>
+</div>
+
+<div class="footer" style="text-align: center">
+	<p class="footer_text">Белорусский Государственный Технологический Университет, 2016</p>
+</div>
+
+</body>
+</html>
